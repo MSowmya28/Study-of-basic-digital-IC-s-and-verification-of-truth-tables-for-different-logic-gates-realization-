@@ -49,11 +49,15 @@
 
 ```
 ## Procedure:
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
-If the output is 1, then the bulb glows.
-Check all the gates following the same procedure.
+1.Connect the supply (+5V) to the circuit
+
+2.Switch ON the main switch
+
+3.Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
+
+4.If the output is 1, then the bulb glows.
+
+5.Check all the gates following the same procedure.
 # Program:
 /*
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
@@ -61,19 +65,29 @@ Program to verify the truth table in quartus for the basic logic gates using Ver
 Developed by: M.Sowmya 
 
 RegisterNumber:  212221230107
-```
+
 module EX1(a,b,L,M,N,O,P,Q,R);
+
 input a,b;
+
 output L,M,N,O,P,Q,R;
+
 and (L,a,b);
+
 or (M,a,b);
+
 not (N,a);
+
 xor (O,a,b);
+
 nand (P,a,b);
+
 nor (Q,a,b);
+
 xnor (R,a,b);
+
 endmodule
-```
+
 
 # Logic symbol & Truthtable:
 ![output](./Ex.1excel.PNG)
@@ -82,5 +96,4 @@ RTL realization
 ## Output:
 ![output](./EX.1de.PNG)
 
-## Result:
-    Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
+## Result:                                                         Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
